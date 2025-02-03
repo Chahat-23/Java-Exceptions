@@ -5,7 +5,7 @@ public class Main {
         //Catch exception -
         try {
             int myInt = Integer.parseInt("pants"); //throws exception
-            System.out.println(myInt);
+            System.out.println(myInt); //only runs if input is integer in above
         }
         catch (NumberFormatException nfe) {
             System.out.println("Can't parse an Int out of a String!");
@@ -16,5 +16,8 @@ public class Main {
         // catch ( NumberFormatException | Exception e) {
         //     System.out.println("Caught multiple exceptions");
         // }
+        finally {
+            System.out.println("The End!");
+        }
     }
 }
